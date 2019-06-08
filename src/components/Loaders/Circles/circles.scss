@@ -1,0 +1,31 @@
+.circle {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
+  animation-name: scale;
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+#circle1 {
+  animation-delay: 0s;
+}
+
+#circle2 {
+  animation-delay: 750ms;
+}
+
+#circle3 {
+  animation-delay: 0s;
+}

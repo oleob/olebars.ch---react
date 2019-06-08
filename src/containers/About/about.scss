@@ -1,0 +1,13 @@
+@import '../../scss/constants.scss';
+
+.about {
+  text-align: center;
+  color: $text-color-2;
+  a {
+      color: $text-color-2;
+  }
+  &__picture {
+    width: 20rem;
+    border-radius: 100%;
+  }
+}

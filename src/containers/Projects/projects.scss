@@ -1,0 +1,12 @@
+@import '../../scss/constants.scss';
+
+.projects {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__footer {
+    display: flex;
+  }
+}

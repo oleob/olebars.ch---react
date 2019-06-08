@@ -1,0 +1,28 @@
+@import '../../scss/constants.scss';
+
+.tabs {
+  &__header-container {
+    display: grid;
+    background-color: $primary-color;
+    grid-column-gap: 0.2rem;
+    &--clear {
+      background-color: transparent;
+    }
+  }
+  &__header {
+    &:hover {
+      cursor: pointer;
+    }
+    &-text {
+      color: $text-color;
+      margin: 0.5rem 1rem 0.5rem 1rem;
+    }
+    border-bottom: 2px solid transparent;
+    &--active {
+      border-bottom: 2px solid $border-color;
+    }
+  }
+  &__content {
+    padding: 1rem;
+  }
+}

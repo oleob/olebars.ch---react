@@ -1,0 +1,71 @@
+@import '../../scss/constants.scss';
+
+.page-links {
+    display: flex;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    justify-content: space-evenly;
+    animation: wait-for-curtain 2s linear 5.5s forwards;
+    &__link {
+        color: $text-color-2;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin: 0;
+        }
+        background-color: $primary-color;
+        border-radius: 100%;
+        height: 10rem;
+        width: 10rem;
+        text-align: center;
+        font-size: 2rem;
+        &:hover {
+            transform: scale(1.1);
+        }
+        transition: 0.2s all ease-in-out;
+        &--left {
+            animation: from-left 2s ease-in-out 5.5s;
+        }
+        &--right {
+            animation: from-right 2s ease-in-out 5.5s;
+        }
+    }
+    &__icon {
+        margin-bottom: 0.75rem;
+        font-size: 3rem;
+    }
+}
+
+@keyframes wait-for-curtain {
+    from {
+        width: 100%;
+        visibility: inherit;
+        overflow: inherit
+    }
+    to {
+        visibility: inherit;
+        width: 100%;
+        overflow: inherit
+    }
+}
+
+@keyframes from-left {
+    from{
+        transform: translateX(-50rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes from-right {
+    from{
+        transform: translateX(50rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

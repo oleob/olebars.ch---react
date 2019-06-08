@@ -1,0 +1,21 @@
+@import '../../scss/constants.scss';
+
+.header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  padding: 2rem 0 0 5rem;
+  color: $text-color-2;
+  &__icon {
+    font-size: 2rem;
+    margin-right: 10rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  a {
+    color: $text-color-2;
+    font-size: 2rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+}

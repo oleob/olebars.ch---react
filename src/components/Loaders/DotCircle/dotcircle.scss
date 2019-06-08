@@ -1,0 +1,28 @@
+.dotcircle {
+  &__dot {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 50%;
+    animation-name: animate-dot;
+
+    @keyframes animate-dot {
+      0% {
+        transform: scale(0.5);
+      }
+      50% {
+          transform: scale(1);
+      }
+      100% {
+        transform: scale(0.5);
+      }
+    }
+  }
+  @for $i from 1 through 8 {
+    g:nth-of-type(#{$i}) {
+        .dotcircle__dot {
+            animation-delay: #{$i*125}ms;
+        }
+    }
+  }
+}

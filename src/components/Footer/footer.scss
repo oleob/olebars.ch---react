@@ -1,0 +1,35 @@
+@import '../../scss/constants.scss';
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 7rem 7rem 7rem 1fr;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-align: center;
+  background-color: $tertiary-color;
+  color: $text-color;
+  padding: 1rem;
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+  a {
+    color: $text-color;
+  }
+  &__icon {
+    margin-right: 0.5rem;
+  }
+  &__links {
+    padding: 0;
+    grid-column: 2/3;
+    text-align: left;
+  }
+  &__about {
+    text-align: center;
+    grid-column: 3/4;
+  }
+  &__source {
+    text-align: right;
+    grid-column: 4/5;
+  }
+}

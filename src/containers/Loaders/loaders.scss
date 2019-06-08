@@ -1,0 +1,10 @@
+.loaders {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__loader-container {
+        margin: 3rem;
+        width: 7rem;
+        height: 7rem;
+    }
+}
