@@ -1,2 +1,2 @@
-# NTNUI-Kite frontend
-woop de doow
+# olebars.ch Frontend
+Woop de doo

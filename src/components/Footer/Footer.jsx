@@ -34,7 +34,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer__source">
-      <a href="https://github.com/oleob">
+      <a href="https://github.com/oleob/olebars.ch">
         <i className="footer__icon fas fa-file-code" />
         Source code
       </a>
