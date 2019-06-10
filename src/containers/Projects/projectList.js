@@ -23,7 +23,7 @@ const externalProjects = [
   {
     title: 'Old homepage',
     text: 'Deprecated version of this page. Contains a cool menu.',
-    link: 'https://practical-bohr-7f94dd.netlify.com/',
+    link: 'https://nifty-panini-17a965.netlify.com/',
     source: 'https://github.com/oleob/olebars.ch-old',
     tags: ['React', 'CSS3']
   },
