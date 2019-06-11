@@ -1,0 +1,80 @@
+@import '../../../../scss/constants.scss';
+
+.square-dots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: stretch;
+  justify-items: stretch;
+  height: 100%;
+  &__dot {
+    border-radius: 100%;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    &--1 {
+      animation-name: 'move--1';
+      background-color: $primary-color;
+    }
+    &--2 {
+      animation-name: 'move--2';
+      background-color: $secondary-color;
+    }
+    &--3 {
+      animation-name: 'move--3';
+      background-color: $tertiary-color;
+    }
+    &--4 {
+      animation-name: 'move--4';
+      background-color: $background-color;
+    }
+  }
+}
+
+@keyframes move--1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move--2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-100%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move--3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(100%, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes move--4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

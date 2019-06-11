@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Arrow,
   Squares,
@@ -8,6 +8,8 @@ import {
   DotCircle,
   ColorSquares
 } from '../../components/Loaders';
+
+import { LoadingWave, SquareDots } from '../../components/Loaders/CSSLoaders';
 
 import Tabs from '../../components/Tabs';
 
@@ -39,10 +41,30 @@ const SVGLoaders = () => (
   </div>
 );
 
+const CSSLoaders = () => {
+  const [numbars, setNumBars] = useState(10);
+  return (
+    <div className="loaders">
+      <div className="loaders__loader-container">
+        <input
+          type="number"
+          placeholder="Number of bars"
+          onChange={e => setNumBars(e.target.value)}
+          max={25}
+        ></input>
+        <LoadingWave numBars={numbars} />
+      </div>
+      <div className="loaders__loader-container">
+        <SquareDots />
+      </div>
+    </div>
+  );
+};
+
 const Loaders = () => (
   <Tabs labels={['SVG loaders', 'CSS loaders']}>
     <SVGLoaders />
-    <h3>CSS loaders here</h3>
+    <CSSLoaders />
   </Tabs>
 );
 
