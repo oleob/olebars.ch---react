@@ -11,10 +11,6 @@ const About = () => (
       This page is made with React and SASS and is hosted on{' '}
       <a href="http://netlify.com">Netlify</a>.
     </p>
-    <p>
-      If you have any questions, send me an email:{' '}
-      <a href="mailto:ole.barsch@gmail.com">ole.barsch@gmail.com</a>
-    </p>
   </div>
 );
 
